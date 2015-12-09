@@ -1393,7 +1393,7 @@ sort($stack_template);
 $config = array(
 	'title' 		=> __('Stack Builder', 'theme_admin'),
 	'group_id' 		=> 'stack_builder',
-	'types' 		=> array( 'page', 'portfolio', 'event' ),
+	'types' 		=> array( 'page', 'portfolio', 'event', 'post' ),
 	'context' 		=> 'normal',
 	'priority' 		=> 'low'
 );
