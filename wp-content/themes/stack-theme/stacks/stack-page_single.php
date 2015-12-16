@@ -3,8 +3,7 @@
 <div class="container">
 <div class="row">
 	
-	<div class="span8">
-	<div class="padding-right-20">	
+	<div class="span12">
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if( get_post_thumbnail_id() && theme_options( 'blog', 'single_featured_img' ) != 'off' ): ?>
 		<div class="post-thumb-box">
@@ -36,15 +35,7 @@
 		<?php endif; ?>
 	</div>
 	</div>
-	</div>
 
-	<aside class="span4 sidebar">
-		<?php 
-			global $post;
-			if ( get_post_meta($post->ID, '_general_custom_sidebar', true) ) dynamic_sidebar( get_post_meta($post->ID, '_general_custom_sidebar', true) );
-			else dynamic_sidebar( 'blog' );
-		?>
-	</aside>
 	
 </div>
 </div>
